@@ -23,6 +23,6 @@ jobs:
         username: ${{secrets.docker_username}}
         password: ${{secrets.docker_key}}
     - name: Build docker
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/neon-memory-game
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/neon-memory-game .
     - name: Push Docker image
       run: docker push $(f secrets.DOCKER_USERNAME >/neon-memory-game
